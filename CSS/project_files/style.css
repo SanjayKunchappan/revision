@@ -1,0 +1,20 @@
+/*
+Selector {
+    Property: value;
+}
+*/
+
+h2 {
+    color: red;
+    background-color: black;
+}
+
+p {
+    color:pink;
+}
+/*
+cascading means that it will always take the selector that is at the end!
+*/
+p {
+    color:grey;
+}
