@@ -2,19 +2,91 @@
 Selector {
     Property: value;
 }
-*/
 
-h2 {
-    color: red;
-    background-color: black;
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class
+#id
+*
+element  -  targets the given element
+element, element  - targets both elements 
+outsideelement insideelement - applies to all inside elements
+parentelement > childelement - will apply to child 
+element1 + element2 - applies to element2 if its directly below element1
+:hover
+:last-child
+:first-child
+!important (not recommended)
+
+
+What selectors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+
+
+
+*/
+body {
+  background-image: url(images/bg-img.jpg);
+  background-size: cover;
 }
 
+h2 {
+  color: white;
+  text-align: center;
+  border: 5px solid purple;
+  cursor: pointer;
+  font-family: 'Inter',sans-serif;
+}
+
+.red {
+    color:yellow;
+}
+
+
+
 p {
-    color:pink;
+  color: pink;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*
 cascading means that it will always take the selector that is at the end!
 */
 p {
-    color:grey;
+  color: grey;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1em;
+}
+
+a {
+    font-family: 'Inter',sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+li:hover {
+    border-bottom: 2px  solid white;
+}
+
+.active-page{
+    font-family: 'Inter',sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 120%;
 }
