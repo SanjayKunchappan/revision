@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    --bordercolor: pink;
 }
 img {
     width: 450px;
@@ -25,6 +26,6 @@ h1 {
     font-size: 3em;
     text-align: center;
     width: 400px;
-    border-bottom: 2px solid pink;
-    border-right: 2px solid pink;
+    border-bottom: 2px solid var(--bordercolor, red);
+    border-right: 2px solid var(--bordercolor,red);
 }
