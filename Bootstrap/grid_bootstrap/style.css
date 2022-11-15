@@ -1,0 +1,15 @@
+.container {
+    background-color:grey;
+}
+
+.row {
+    background-color:yellow;
+}
+
+.col {
+    background-color:indigo;
+    color: white;
+    border: 2px solid grey;
+}
+
+
