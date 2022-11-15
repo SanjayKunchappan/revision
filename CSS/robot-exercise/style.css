@@ -117,3 +117,13 @@ h1 {
 
 
 
+setTimeout(function() {
+	liquidityManagementPage.historyCap.click();
+  }, 5000);
+
+
+  browser.executeScript('
+  	window.setTimeout(function() {
+		console.log("waiting");
+	}, 50000); ');
+	
