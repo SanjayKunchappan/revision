@@ -3,9 +3,16 @@
     gap:20px;
     /*if we put auto instead of 1fr, then the element will take up enough space,
      to fill the content and rest of the space for remaining columns */
-    grid-template-columns: 1fr 1fr 2fr; /* 1fr means 1 fraction for one column */
-    grid-template-columns: repeat(3,1fr); /*repeat 1fr 3 times*/
+    /*grid-template-columns: 1fr 1fr 2fr; /* 1fr means 1 fraction for one column */
+    /* grid-template-columns: repeat(5,1fr); /*repeat 1fr 3 times*/
+    /*grid-template-columns: repeat(auto-fill, 300px); /* includes as many 300px blocks that can fit in viewport*/
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); /**/
     grid-template-rows: 1fr; /*for rows after the defined part, repeats the pattern*/
+}
+
+.green {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .zone {
